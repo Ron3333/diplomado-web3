@@ -1,0 +1,58 @@
+Claro, aquí tienes una lista de selectores con pseudo-elementos en CSS, junto con ejemplos:
+
+### 1. `::before`
+Se utiliza para insertar contenido antes del contenido de un elemento.
+
+**Ejemplo:**
+```css
+p::before {
+    content: "Nota: ";
+    font-weight: bold;
+}
+```
+
+### 2. `::after`
+Se utiliza para insertar contenido después del contenido de un elemento.
+
+**Ejemplo:**
+```css
+p::after {
+    content: " (fin)";
+    color: gray;
+}
+```
+
+### 3. `::first-line`
+Aplica estilos a la primera línea de un bloque de texto.
+
+**Ejemplo:**
+```css
+p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+```
+
+### 4. `::first-letter`
+Aplica estilos a la primera letra de un bloque de texto.
+
+**Ejemplo:**
+```css
+p::first-letter {
+    font-size: 2em;
+    float: left;
+    margin-right: 0.1em;
+}
+```
+
+### 5. `::selection`
+Aplica estilos a la parte del texto que ha sido seleccionada por el usuario.
+
+**Ejemplo:**
+```css
+::selection {
+    background: yellow;
+    color: black;
+}
+```
+

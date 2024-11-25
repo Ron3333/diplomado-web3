@@ -1,0 +1,82 @@
+Aquí tienes una lista completa de pseudo-clases en CSS, junto con ejemplos para cada una:
+
+### 1. `:hover`
+Se activa cuando el usuario pasa el mouse sobre un elemento.
+
+**Ejemplo:**
+```css
+a:hover {
+    color: red;
+}
+```
+
+### 2. `:active`
+Se aplica a un elemento en el momento en que está siendo activado (por ejemplo, al hacer clic).
+
+**Ejemplo:**
+```css
+button:active {
+    background-color: green;
+}
+```
+
+### 3. `:focus`
+Se aplica a un elemento que tiene el foco (por ejemplo, un campo de entrada).
+
+**Ejemplo:**
+```css
+input:focus {
+    border: 2px solid blue;
+}
+```
+
+### 4. `:visited`
+Se aplica a enlaces que el usuario ya ha visitado.
+
+**Ejemplo:**
+```css
+a:visited {
+    color: purple;
+}
+```
+
+### 5. `:link`
+Se aplica a enlaces que no han sido visitados.
+
+**Ejemplo:**
+```css
+a:link {
+    color: blue;
+}
+```
+
+### 6. `:first-child`
+Se aplica al primer hijo de un elemento.
+
+**Ejemplo:**
+```css
+p:first-child {
+    font-weight: bold;
+}
+```
+
+### 7. `:last-child`
+Se aplica al último hijo de un elemento.
+
+**Ejemplo:**
+```css
+p:last-child {
+    color: green;
+}
+```
+
+### 8. `:nth-child(n)`
+Se aplica al enésimo hijo de un elemento.
+
+**Ejemplo:**
+```css
+li:nth-child(2) {
+    color: orange; /* Aplica a la segunda lista */
+}
+```
+
