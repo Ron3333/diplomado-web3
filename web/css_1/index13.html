@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.container {
+	      width: 200px;
+	      height: 150px;
+	      border: 1px solid black;
+	      margin-bottom: 20px;
+	    }
+	    .visible {
+	    }
+	      overflow: visible;
+	    .hidden {
+	      overflow: hidden;
+	    }
+	    .scroll {
+	      overflow: scroll;
+	    }
+	    .auto {
+	      overflow: auto;
+	    }
+
+	    .imagen{
+	    	background-image: url("images.png") ;
+	    	width: 220px;
+	    	height: 200px;
+	    	background-size: cover;
+	    }
+	</style>
+</head>
+<body>
+	<div class="container visible" style="">
+      <p>Este es un texto que excede el tamaño del contenedor. El valor de overflow es 'visible', por lo que el contenido se mostrará fuera del contenedor.
+      	
+
+      </p>
+    </div>
+
+    <div class="container hidden">
+      <p>Este es un texto que excede el tamaño del contenedor. El valor de overflow es 'visible', por lo que el contenido se mostrará fuera del contenedor.
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 'visible', por lo que el contenido se mostrará fuera del contenedor.
+      </p>
+    </div>
+
+     <div class="container scroll">
+      <p>Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      </p>
+    </div>
+
+    <div class="container auto">
+      <p>Este es un texto que excede el tamaño del contenedor.
+       El valor de overflow es Este es un 
+      	
+      	autoauto
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	autoauto
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	autoauto
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	Este es un texto que excede el tamaño del contenedor. El valor de overflow es 
+      	autoauto
+      </p>
+    </div>
+    <div class="imagen">
+    	
+    </div>
+
+</body>
+</html>
