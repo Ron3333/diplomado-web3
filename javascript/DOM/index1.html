@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+	<h1>DOM</h1>
+	<h1 id='cabecera' >Ejemplo DOM Javascript</h1>
+	<h1 id="cabecera2" ></h1>
+
+	<p>parrafo Uno</p>
+	<p>parrafo 2</p>
+	<p>parrafo 3</p>
+
+	<script>
+
+		let cabecera = document.getElementById('cabecera').innerHTML;
+		console.log("VALOR DE CABECERA: " + cabecera);
+
+		document.getElementById('cabecera2').innerHTML = "Ejemplo";
+
+		let parrafo = document.getElementsByTagName("p");
+		//console.log(`No. párrafo: ${parrafo.length}`);
+		console.log("No. párrafo:" + parrafo.length);
+
+		for(let i=0; i<parrafo.length ; i++){
+		   console.log(parrafo[i].innerHTML)
+		   //console.log(`i:${i} - ${parrafo[i].innerHTML}`)
+		}
+	
+
+	</script>
+	<!-- <script src="app.js" ></script> -->
+
+</body>
+</html>

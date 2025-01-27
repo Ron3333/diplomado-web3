@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<p class="azul"> parrafo 1</p>
+	<p class="azul"> parrafo 2</p>
+	<p class="azul"> parrafo 3</p>
+	<h1 class="azul">AZUL</h1>
+
+	<script>
+
+		//let elementos = document.querySelectorAll("p.azul");
+		let elementos = document.getElementsByClassName("azul");
+		console.log(`No. elenentos azul: ${elementos.length}`);
+
+		for(let i=0; i<elementos.length ; i++){
+			console.log(`i:${i} - ${elementos[i]}`)
+			console.log("i:"+i+ " - " + elementos.innerHTML)
+		}
+
+		for(let elemento of elementos){
+			console.log(elemento.innerHTML);
+		}
+		
+	</script>
+
+</body>
+</html>

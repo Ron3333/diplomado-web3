@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<form id="formulario">
+		Nombre:   <input type="text" name="nombre" value="" placeholder="Escribe tu nombre">
+		<br>
+		Apellido: <input type="text" name="apellido" value="" placeholder="Escribe tu apellido">
+		<br>
+	</form>
+	<button onclick="mostrarValores()">MOSTRAR</button>
+
+	<div id="valores"></div>
+	<script type="text/javascript">
+		
+		function mostrarValores(){
+			console.log("Evento Click");
+			let formulario = document.forms["formulario"];
+			let texto="";
+
+			let nombre = formulario["nombre"];
+			let apellido = formulario["apellido"];
+			texto = nombre.value +"<br>"+ apellido.value ;
+
+			console.log(texto);
+			document.getElementById('valores').innerHTML = texto;
+			
+		}
+	
+	</script>
+
+</body>
+</html>
